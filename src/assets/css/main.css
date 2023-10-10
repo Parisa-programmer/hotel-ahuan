@@ -17,6 +17,17 @@
   font-weight: 100;
 }
 
+@font-face {
+  font-family: rokh;
+  src: url("/src/assets/fonts/Rokh_Pro/WebFonts/woff/Rokh-Bold.woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+.back1 {
+  background-color: #deb88773;
+}
+
 .v-row {
   margin: 0 !important;
 }
@@ -32,6 +43,10 @@ html {
 
 * {
   font-family: pelak;
+}
+
+.rokh {
+  font-family: rokh !important;
 }
 
 .v-messages__message {
@@ -301,7 +316,7 @@ ul li {
 
 ul li::before {
   content: "\2022";
-  color: red;
+  color: #deb887;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -981,7 +996,7 @@ input::-webkit-inner-spin-button {
 }
 
 .menue-list {
-  top: 116px !important;
+  top: 56px !important;
 }
 
 .menuHeader {
@@ -1258,6 +1273,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (min-width: 600px) and (max-width: 959px) {
+  .v-navigation-drawer--is-mobile:not(.v-navigation-drawer--close),
+  .v-navigation-drawer--temporary:not(.v-navigation-drawer--close) {
+    width: 100% !important;
+  }
   .topDivVisa {
     top: 20px;
   }
@@ -1486,6 +1505,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 599px) {
+  .v-navigation-drawer--is-mobile:not(.v-navigation-drawer--close),
+  .v-navigation-drawer--temporary:not(.v-navigation-drawer--close) {
+    width: 100% !important;
+  }
   .englishDataTabel td div:nth-child(2) {
     font-family: "Roboto", sans-serif !important;
     direction: ltr !important;
@@ -1503,7 +1526,7 @@ input::-webkit-inner-spin-button {
   }
 
   .menue-list {
-    top: 115px !important;
+    top: 56px !important;
   }
 
   .paragraph {
