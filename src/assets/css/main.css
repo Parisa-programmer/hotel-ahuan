@@ -1525,6 +1525,9 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
 
+  .test {
+  }
+
   .menue-list {
     top: 56px !important;
   }
